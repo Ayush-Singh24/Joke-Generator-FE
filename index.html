@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="heading">Welcome to my joke generator!</h2>
+    <section class="main">
+      <button class="btn">
+        <span class="btn-text"> Generate Joke </span>
+      </button>
+      <div class="joke-container"><p class="joke-text"></p></div>
+      <div class="rating">
+        <div class="rating__like">
+          <button id="likeBtn" class="rating__btn">
+            <img src="images/like.png" alt="like img" class="rating__img" />
+          </button>
+          <p class="rating__count rating__count-like" id="likeText"></p>
+        </div>
+        <div class="rating__dislike">
+          <button id="dislikeBtn" class="rating__btn">
+            <img
+              src="images/dislike.png"
+              alt="dislike img"
+              class="rating__img"
+            />
+          </button>
+          <p class="rating__count rating__count-dislike" id="dislikeText"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
